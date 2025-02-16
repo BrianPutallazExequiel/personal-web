@@ -4,6 +4,8 @@ import "./About.css";
 import Programming from "../../assets/images/programming.png";
 import UTN from "../../assets/images/UTN.png";
 import TituloUTN from "../../assets/images/TituloUTN.png";
+import BA from "../../assets/images/BA.png";
+import TituloBA from "../../assets/images/TituloBA.png";
 
 
 const About = () => {
@@ -69,8 +71,15 @@ const About = () => {
                 </div>
                 <p className="about__certifications">{t("about-certifications")}</p>
                 <div className="about__certifications-container">
+                    <div>
                     <img className="about__certifications-UTN" src={UTN} alt="Certificación UTN" />
                     <img className="about__certifications-titiloUTN" src={TituloUTN} alt="Título UTN" />
+                    </div>
+                    <div>
+                    <img className="about__certifications-UTN" src={BA} alt="Certificación UTN" />
+                    <img className="about__certifications-titiloUTN" src={TituloBA} alt="Título Buenos Aires multiplica" />
+                    </div>
+                    
                 </div>
             </div>
         </section>

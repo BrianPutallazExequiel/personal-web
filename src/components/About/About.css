@@ -11,7 +11,8 @@
     gap: 2rem;
 }
 .about__image {
-    width: clamp(31.25rem, -14.205rem + 227.273vi, 156.25rem);
+    width: clamp(20.25rem, -14.205rem + 227.273vi, 156.25rem);
+    max-width: 30vw;
     margin: 0 1rem;
 }
 .about__content {
@@ -41,9 +42,7 @@
 }
 .about__certifications-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
 }
@@ -52,4 +51,38 @@
 }
 .about__certifications-titiloUTN {
     width: 10rem;
+}
+.about__certifications-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+@media screen and (max-width: 1100px) {
+    .about {
+        flex-direction: column;
+    }
+    .about__image {
+        display: none;
+    }
+    .about__content {
+        max-width: 100%;
+        text-align: center;
+    }
+    .about__habilities {
+        margin-top: 2rem;
+    }
+    .about__certifications {
+        margin-top: 3rem;
+    }
+    .about__certifications-container {
+        margin-top: 2rem;
+        justify-content: center;
+    }
+    .about__certifications-UTN {
+        width: 7rem;
+    }
+    .about__certifications-titiloUTN {
+        width: 15rem;
+    }
 }
