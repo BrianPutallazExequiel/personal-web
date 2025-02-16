@@ -7,7 +7,7 @@
     margin: 0 auto;
     text-align: center;
     color: var(--black-1);
-    padding: 10rem 1rem 0 1rem;
+    padding: 15rem 1rem 0 1rem;
 }
 
 .hero__content {
@@ -84,12 +84,13 @@
 
     .hero__subtitle {
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
-
+    .hero__description {
+        margin-bottom: 1rem;
+    }
     .hero__image {
         max-width: 27rem;
         height: 50vh;
-        margin-top: 1rem;
     }
 }
