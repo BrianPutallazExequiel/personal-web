@@ -6,5 +6,9 @@
     "contact": "Contact",
     "hero-presentation": "Hi, I'm Brian Exequiel",
     "hero-profession": "Web Developer",
-    "hero-paragraph": "With experience in UX/UI and programming, I transform ideas into digital businesses, ensuring results that connect with users and attract customers."
+    "hero-paragraph": "With experience in UX/UI and programming, I transform ideas into digital businesses, ensuring results that connect with users and attract customers.",
+    "about-title": "About Me",
+    "about-paragraph": "I am a web developer with experience in UX/UI design and programming. I have a degree in Computer Science and I am passionate about technology. I am always looking for new challenges and learning new technologies.",
+    "about-habilities": "I have knowledge in:",
+    "about-certifications": "Certifications"
 }

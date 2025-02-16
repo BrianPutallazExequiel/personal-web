@@ -4,6 +4,7 @@ import './i18n';
 import Header from './components/Header/Header.jsx';
 import Hero from './components/Hero/Hero.jsx';
 import './styles/reset.css';
+import About from './components/About/About.jsx';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -21,6 +22,7 @@ function App() {
     <div>
       <Header />
       <Hero />
+      <About />
     </div>
   );
 }
