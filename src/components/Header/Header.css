@@ -1,0 +1,133 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    height: 6.25rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+    width: clamp(11.25rem, 10.795rem + 2.273vi, 12.5rem);
+    height: auto;
+}
+.header__nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+.header__language-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+.header__contact-button {
+    color: var(--white);
+    font-weight: 500;
+    background: var(--gradient);
+    padding: .5rem 4rem;
+    border-radius: .5rem;
+}
+
+.header__contact-button:hover {
+    opacity: 0.80;
+}
+
+.header__contact-button:active {
+    transform: scale(0.98);
+}
+.burger {
+    position: relative;
+    width: 35px;
+    height: 25px;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .burger input {
+    display: none;
+  }
+  
+  .burger span {
+    display: block;
+    position: absolute;
+    height: 3.5px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  
+  .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+  
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(50deg);
+    top: -6px;
+    left: 4px;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-50deg);
+    top: 20px;
+    left: 4px;
+  }
+  @media (max-width: 920px) {
+    .header__nav {
+      display: none;
+
+    }
+    .header__nav-list {
+      flex-direction: column;
+      gap: 4rem;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 100px);
+      background: var(--white);
+    }
+    .header__language-switcher {
+      position: absolute;
+      top: 50px;
+      transform: translateY(-50%);
+      right: 70px;
+    }
+    .header__contact-button {
+      display: none;
+    }
+    .burger {
+      display: block;
+    }
+    .active {
+      display: flex;
+    }
+  }
